@@ -1,4 +1,8 @@
 import 'normalize.css';
 import './style.css';
 
-console.log("this is a test!");
+import initialLoad from './initial-load';
+
+//todo write changepage and link to initial-load/
+
+initialLoad();
