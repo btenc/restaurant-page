@@ -1,4 +1,114 @@
+@font-face {
+    font-family: 'geraldine';
+    src: url('fonts/geraldine.woff2') format('woff2'),
+         url('fonts/geraldine.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 .home-page-image{
     content: url(images/chef-img.png);
-    width: 250px;
+    width: 400px;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-image: url(images/wood-wallpaper.jpg);
+    backdrop-filter: blur(3px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header-container{
+    color: white;
+    font-family: 'geraldine';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.header-text{
+    margin: 30px;
+    text-align: center;
+    color: white;
+    font-family: 'geraldine';
+    font-size: 7rem;
+}
+
+#nav-container{
+    font-size: 3rem;
+    display: flex;
+    gap: 50px;
+}
+
+#footer-container{
+    font-size: .7rem;
+    text-align: center;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#body-container{
+    font-size: 2.7rem;
+    font-family: 'geraldine';
+    color: white;
+
+
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.body-box{
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.contact-box{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
+}
+
+.menu{ 
+    flex-direction: row;
+
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.food-img{
+    content: url(images/food.jpg);
+    width: 150px;
 }

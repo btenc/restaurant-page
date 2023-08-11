@@ -1,5 +1,7 @@
 //creates the header, body area, and footer, then loads the default home page
 import loadHome from "./body-pages/home";
+import loadMenu from "./body-pages/menu";
+import loadContact from "./body-pages/contact";
 
 function createHeader(){
     const headerContainer = document.createElement("div");
@@ -15,6 +17,20 @@ function createHeader(){
     return headerContainer;
 }
 
+function changePage(item){
+    if(item == "Home"){
+        loadHome();
+    }
+
+    if(item == "Menu"){
+        loadMenu();
+    }
+
+    if(item == "Contact"){
+        loadContact();
+    }
+}
+
 function createNavigator(str1, str2, str3){
     const navContainer = document.createElement("div");
     navContainer.setAttribute("id","nav-container");
@@ -27,7 +43,7 @@ function createNavigator(str1, str2, str3){
         navItem.setAttribute('id',item);
         navItem.textContent = item;
         navItem.addEventListener("click", () => {
-            changePage();
+            changePage(item);
         });
         navContainer.appendChild(navItem);
     });
